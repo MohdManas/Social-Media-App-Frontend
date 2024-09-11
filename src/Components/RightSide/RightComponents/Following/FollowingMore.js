@@ -68,7 +68,7 @@ const FollowingMore = ({showMore,setShowMore}) => {
                       </div>
                   </div>
         
-                  <button className='Rbtn' style={{background:"linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%)"}}>Follow</button>
+                  <button className='Rbtn' style={{background:"linear-gradient(107deg, #6EACDA)"}}>Follow</button>
             </div>
         
         ))}

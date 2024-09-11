@@ -33,9 +33,9 @@ const FollowingUList = ({data,following,setFollowing}) => {
           </div>
 
           <button
-          style={{background: clicked ? "transparent" : "linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%)",
+          style={{background: clicked ? "transparent" : "linear-gradient(107deg, )",
                   color:clicked ? "black" : "white",
-                  border:clicked ? "2px solid orangered" : "none"
+                  border:clicked ? "2px solid #6EACDA" : "none"
                 }}
           onClick={handleFollow}
            >

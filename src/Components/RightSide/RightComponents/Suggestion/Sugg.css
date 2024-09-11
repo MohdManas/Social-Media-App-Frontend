@@ -43,15 +43,14 @@
 }
 .s-right button{
     padding: 5px 10px;
-    background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);;
+    background:#6EACDA;;
     border-radius: 5px;
     font-size: 13px;
     border: none;
-    color: #fff;
     cursor: pointer;
 }
 .s-right button:hover{
-    border: 2px solid orangered;
+    border: 2px solid #6EACDA;
     background-color: transparent;
 }
 

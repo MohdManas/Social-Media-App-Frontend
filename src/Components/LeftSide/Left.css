@@ -27,15 +27,15 @@
     margin-left: -10px;
 }
 #L-box:hover{
-    background-color: rgb(232, 129, 91);
+    background-color:#BBE9FF;
     transition: .4s;
     cursor: pointer;
-    color: #fff;
+    color: lightslategray;
 }
 #L-box.active{
     font-weight: 500;
-    background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
-    color: #fff;
+    background: linear-gradient(107deg, #6EACDA#BBE9FF);
+    color: black;
 }
 #L-box.active p{
     background-color: #fff;
@@ -52,7 +52,7 @@
     font-size: 12px;
     width: 20px;
     height: 20px;
-    background-color:orangered;
+    background-color:#6EACDA;
     color: #fff;
     border-radius: 50px;
     display: flex;

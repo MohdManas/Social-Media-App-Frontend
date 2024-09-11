@@ -93,7 +93,7 @@ const Home = ({setFriendsProfile}) => {
           },
           {
             id:4,
-            username:"Vijay",
+            username:"Manas",
             profilepicture:Profile,
             img:Uimg1,
             datetime:moment("20230310", "YYYYMMDD").fromNow(),
@@ -101,7 +101,7 @@ const Home = ({setFriendsProfile}) => {
             like: 22,
             comment:3,
             coverpicture:cover,
-            userid:"@vijay98",
+            userid:"@Manas99",
             ModelCountryName:"India",
             ModelJobName:"Web Developer in Google",
             ModelJoinedDate:"Joined in 2023-08-12",
@@ -125,7 +125,7 @@ const Home = ({setFriendsProfile}) => {
           },
           {
             id:6,
-            username:"Vijay",
+            username:"Manas",
             profilepicture:Profile,
             img:Uimg2,
             datetime:moment("20230618", "YYYYMMDD").fromNow(),
@@ -133,7 +133,7 @@ const Home = ({setFriendsProfile}) => {
             like: 84,
             comment:3,
             coverpicture:cover,
-            userid:"@vijay98",
+            userid:"@Manas99",
             ModelCountryName:"India",
             ModelJobName:"Web Developer in Google",
             ModelJoinedDate:"Joined in 2023-08-12",
@@ -157,7 +157,7 @@ const Home = ({setFriendsProfile}) => {
           },
           {
             id:8,
-            username:"Vijay",
+            username:"Manas",
             profilepicture:Profile,
             img:Uimg3,
             datetime:moment("20230219", "YYYYMMDD").fromNow(),
@@ -165,7 +165,7 @@ const Home = ({setFriendsProfile}) => {
             like: 340,
             comment:3,
             coverpicture:Cover8,
-            userid:"@vijay98",
+            userid:"@Manas99",
             ModelCountryName:"India",
             ModelJobName:"Web Developer in Google",
             ModelJoinedDate:"Joined in 2023-08-12",
@@ -200,7 +200,7 @@ const Home = ({setFriendsProfile}) => {
         
         
         const id =posts.length ? posts[posts.length -1].id +1 :1
-        const username="Vijay"
+        const username="Manas"
         const profilepicture=Profile
         const datetime=moment.utc(new Date(), 'yyyy/MM/dd kk:mm:ss').local().startOf('seconds').fromNow()
         const img =images ? {img:URL.createObjectURL(images)} : null

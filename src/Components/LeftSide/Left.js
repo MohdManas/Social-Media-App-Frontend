@@ -66,8 +66,8 @@ const Left = ({profileImg,
           <div className="user-name-userid">
             <img src={profileImg ? (profileImg) : Profile} alt="" />
               <div className='L-user'>
-                <h1>{modelDetails ? (modelDetails.ModelName) : "Vijay"}</h1>
-                <span>{modelDetails ? (modelDetails.ModelUserName) : "@vijay98"}</span>
+                <h1>{modelDetails ? (modelDetails.ModelName) : "Manas"}</h1>
+                <span>{modelDetails ? (modelDetails.ModelUserName) : "@Manas99"}</span>
             </div>
           </div>
         </Link>
