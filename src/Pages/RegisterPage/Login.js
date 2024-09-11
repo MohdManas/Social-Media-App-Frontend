@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { FiMail } from "react-icons/fi"
 import { RiLockPasswordLine } from "react-icons/ri"
 
-import { FaUserInjured } from "react-icons/fa";
 
 import "../RegisterPage/RegisterPage.css"
 import { Link, useNavigate } from 'react-router-dom'
@@ -19,7 +18,6 @@ const Login = () => {
     const [data, setData] = useState({
         email: "",
         password: "",
-        injured: '',
         
     })
 
@@ -54,7 +52,6 @@ const Login = () => {
 
         const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
         const passwordPattern = /^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g;
-        const injuredPattern = /^(?=.*[A-Z]).{6,}$/;
 
         if (data.email === "") {
             error.email = "* Email is Required"
@@ -69,13 +66,6 @@ const Login = () => {
         }
         else if (!passwordPattern.test(data.password)) {
             error.password = "* Password not valid"
-        }
-
-        if(data.injured === ''){
-            error.injured = '*Injured is mandatory'
-        }
-        else if(!injuredPattern.test(data.injured)){
-            error.injured = 'Injured is not valid'
         }
 
         return error
@@ -108,17 +98,6 @@ const Login = () => {
                             placeholder='Password' />
                     </div>
                     {error.password && <span style={{ color: "red", display: "block", marginTop: "5px" }}>{error.password}</span>}
-
-                    <div className='inputBox'>
-                    <FaUserInjured className='userInjured'/>
-                    <input type='text'
-                    name='injured'
-                    id='injured'
-                    onChange={handleChange}
-                    placeholder='Injured'/>
-
-                    </div>
-                    {error.injured && <span style={{color:'red',dispaly:'block',marginTop: "5px"}}>{error.injured}</span>}
 
                     <div className='divBtn'>
                         <small className='FG'>Forgot Password?</small>
