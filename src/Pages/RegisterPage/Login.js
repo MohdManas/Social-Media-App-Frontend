@@ -6,7 +6,7 @@ import { RiLockPasswordLine } from "react-icons/ri"
 import "../RegisterPage/RegisterPage.css"
 import { Link, useNavigate } from 'react-router-dom'
 import { Spin } from 'antd'
-import { LiaTruckLoadingSolid } from 'react-icons/lia'
+// import { LiaTruckLoadingSolid } from 'react-icons/lia'
 
 
 const Login = () => {
@@ -43,7 +43,7 @@ const Login = () => {
                 navigate("/home");
             },2000)
         }
-    }, [error]);
+    }, [error,navigate,submit]);
 
 
 
@@ -51,7 +51,7 @@ const Login = () => {
         const error = {}
 
         const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-        const passwordPattern = /^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g;
+        const passwordPattern = /^[a-zA-Z0-9!@#$%^&*_=+-]{8,12}$/;
 
         if (data.email === "") {
             error.email = "* Email is Required"
