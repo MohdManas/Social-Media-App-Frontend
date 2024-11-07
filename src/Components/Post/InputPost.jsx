@@ -5,7 +5,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
 import KeyboardVoiceRoundedIcon from '@mui/icons-material/KeyboardVoiceRounded';
 import {FaSmile} from "react-icons/fa"
-
+import ProfilePic from '../../assets/profile.jpg'
 
 
 const InputPost = ({handleSubmit,
@@ -20,7 +20,7 @@ const InputPost = ({handleSubmit,
         <form onSubmit={handleSubmit}>
             <div className="i-input-box">
                 {/* <img src={Profile} className='i-img'/> */}
-                
+                <img className='i-img' src={ProfilePic}  alt='' />
                 <input 
                 type="text" 
                 id="i-input" 

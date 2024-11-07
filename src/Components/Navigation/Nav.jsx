@@ -7,6 +7,7 @@ import {AiOutlineHome} from "react-icons/ai"
 import {LiaUserFriendsSolid} from "react-icons/lia"
 import {IoNotificationsOutline} from "react-icons/io5"
 import {TbMessage} from "react-icons/tb"
+import ProfilePic from '../../assets/profile.jpg'
 
 import Profile from '../../Pages/Profile/Profile';
 
@@ -52,6 +53,7 @@ const Nav = ({search,setSearch,setShowMenu,profileImg}) => {
        <div className="n-profile" >
           <Link to="/profile"> 
             {/* <img src={profileImg ? (profileImg) : Profile} className='n-img' style={{marginBottom:"-7px"}}/> */}
+            <img src={ProfilePic ? (ProfilePic) : Profile} className='n-img' style={{marginBottom:"-7px"}}/>
           </Link>
       </div>
   

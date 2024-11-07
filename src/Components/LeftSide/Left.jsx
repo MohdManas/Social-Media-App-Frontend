@@ -8,6 +8,7 @@ import {BsBookmark} from "react-icons/bs"
 import {RiFileListLine} from "react-icons/ri"
 import {FiSettings} from "react-icons/fi"
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import ProfilePic from '../../assets/profile.jpg'
 
 import Profile from '../../Pages/Profile/Profile'
 
@@ -65,6 +66,7 @@ const Left = ({profileImg,
         <Link to="/profile" style={{textDecoration:"none",color:"black"}}>
           <div className="user-name-userid">
             {/* <img src={profileImg ? (profileImg) : Profile} alt="" /> */}
+            <img src={ProfilePic ? (ProfilePic) : Profile}  alt='' />
               <div className='L-user'>
                 <h1>{modelDetails ? (modelDetails.ModelName) : "Manas"}</h1>
                 <span>{modelDetails ? (modelDetails.ModelUserName) : "@Manas99"}</span>
