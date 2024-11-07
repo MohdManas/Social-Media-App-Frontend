@@ -1,11 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  esbuild: {
-    loader: 'jsx',
-    include: /src\/.*\.js$/, // Ensure all .js files in the src folder are treated as JSX
-  },
+  base: '/social-media-app-frontend/',  // base should be your repository name
 });
