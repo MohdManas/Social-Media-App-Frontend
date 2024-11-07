@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Router>
+      <Router basename="/social-media-app-frontend">
         <Routes>
           <Route path='/home' element={<Home setFriendsProfile={setFriendsProfile} />} />
           <Route path='/profile' element={<Profile />} />
