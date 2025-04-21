@@ -2,7 +2,7 @@
   "name": "social-media-app-frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "/",
+  "homepage": "https://mohdmanas.github.io/social-media-app-frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
